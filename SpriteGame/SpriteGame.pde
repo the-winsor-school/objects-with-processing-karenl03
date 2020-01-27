@@ -11,8 +11,8 @@ void setup() //does this once
   // Blob parameters are: 
   // x (px), y (px), radius (px), 
   // x-speed (px/frame), y-speed (px/frame), and color.
-  player = new Blob(100, 100, 15, 2, 1.5, color(224, 65, 174));
-  other = new Blob(50, 50, 15, 2, 1, color(56, 153, 201));
+  player = new Blob(100, 100, 15, 4, 4, color(224, 65, 174));
+  other = new Blob(50, 50, 14, 4, 4, color(56, 153, 201));
 }
 
 void draw() //loop
@@ -25,6 +25,8 @@ void draw() //loop
   other.chase(player);
   
   // draw the player on the screen.
-  player.drawSprite();
-  other.drawSprite();
+  if(mousePressed == true) {
+    player.drawSprite();
+    other.drawSprite();
+  }
 }
