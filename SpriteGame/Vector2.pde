@@ -19,13 +19,13 @@ class Vector2
   //adding vector with Vector2 other
   Vector2 add(Vector2 other) 
   {
-    return new Vector2(this.x+other.x, this.y+other.y);
+    return new Vector2(this.x + other.x, this.y + other.y);
   }
 
   //subtracting Vector2 other
   Vector2 subtract(Vector2 other) 
   {
-    return new Vector2(this.x-other.x, this.y-other.y);
+    return new Vector2(this.x - other.x, this.y - other.y);
   }
 
   // inverse of Vector2 a
