@@ -30,5 +30,5 @@ void draw() //loop
   if (mousePressed == true) {
     player.drawSprite();
     other.drawSprite();
-  }
+ }
 }

@@ -16,7 +16,7 @@ class Vector2
     return sqrt(this.x*this.x + this.y*this.y);
   }
 
-  //adding vector with Vector2 other
+  //adding vector with Vector2 other - returns the sum
   Vector2 add(Vector2 other) 
   {
     return new Vector2(this.x + other.x, this.y + other.y);
@@ -38,5 +38,11 @@ class Vector2
   Vector2 inverse(float s) 
   {
     return new Vector2(s*this.x, s*this.y);
+  }
+  
+  //compute the dot product x1*x2 + y1*y2
+  float dotProduct(Vector2 other) 
+  {
+    return this.x*other.x + this.y*other.y;
   }
 }
